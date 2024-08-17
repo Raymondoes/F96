@@ -1,19 +1,11 @@
 import streamlit as st
 import requests
-from streamlit_lottie import st_lottie
 from PIL import Image
 
-st.set_page_config(page_title="February 96", page_icon="", layout="wide")
-
-def LottieWebURLImage(url):
-    r = requests
-    if r.status_code != 200:
-        return None
-    return r.json()
+st.set_page_config(page_title="February 96", page_icon=":laptop:", layout="wide")
 
 # LOAD ASSETS
 
-lottie_coding = "https://tcrf.net/Development:Super_Mario_64_%28Nintendo_64%29/Animations"
 img_sm64_cap = Image.open("images/SM64_Hat.png")
 
 # HEADER
